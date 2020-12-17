@@ -1,4 +1,0 @@
-15.12.2020 21:44:48
-In der Klasse: PathFinder ist in der Prozedur: LoadFile->FileStream
-ein Fehler mit der Nummer: 6 aufgetreten, mit der Meldung: 
-Überlauf
