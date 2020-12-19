@@ -1,10 +1,11 @@
 VERSION 5.00
 Begin VB.Form FrmPathFinder 
-   Caption         =   "Form1"
+   Caption         =   "PathFinder"
    ClientHeight    =   6780
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   10395
+   Icon            =   "FrmPathFinder.frx":0000
    LinkTopic       =   "Form1"
    ScaleHeight     =   6780
    ScaleWidth      =   10395
