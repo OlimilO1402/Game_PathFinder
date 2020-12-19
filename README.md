@@ -6,7 +6,7 @@ I do not know the homepage anymore, guess it was a homepage of a programming tea
 Just added some buttons and the compass-feature, otherwise it very much looks like the original. 
 Green is land, like walking on green grass, grey are rocks like not-climbable mountains.
 The compass-feature maybe looks like "cheating", but it is so sad to watch it missing 
-the goal even if it is just one step away
+the goal even if it is just one step away.  
 Project started in June 2007
 
 ![GamePathFinder Image](Resources/Pictures/GamePathFinder.png "GamePathFinder Image")
