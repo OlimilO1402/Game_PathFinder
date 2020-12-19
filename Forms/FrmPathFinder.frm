@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin VB.Form FrmPathFinder 
    Caption         =   "PathFinder"
-   ClientHeight    =   6780
+   ClientHeight    =   7695
    ClientLeft      =   60
    ClientTop       =   450
    ClientWidth     =   10395
    Icon            =   "FrmPathFinder.frx":0000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6780
+   ScaleHeight     =   7695
    ScaleWidth      =   10395
    StartUpPosition =   3  'Windows-Standard
    Begin VB.PictureBox PbLandScape 
