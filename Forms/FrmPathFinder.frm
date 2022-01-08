@@ -10,6 +10,118 @@ Begin VB.Form FrmPathFinder
    ScaleHeight     =   7695
    ScaleWidth      =   10395
    StartUpPosition =   3  'Windows-Standard
+   Begin VB.CommandButton BtnIterate 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   5880
+      TabIndex        =   1
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnSetAnim 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   4920
+      TabIndex        =   3
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnCancel 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   3960
+      TabIndex        =   5
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnWhichGoal 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   3000
+      TabIndex        =   10
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnPFGo 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   2040
+      TabIndex        =   11
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnSaveLand 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   1080
+      TabIndex        =   12
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnLoadLand 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   120
+      TabIndex        =   13
+      Top             =   480
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnMountainPoint 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   5880
+      TabIndex        =   2
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnValleyPoint 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   4920
+      TabIndex        =   4
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnGoalPoint 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   3960
+      TabIndex        =   9
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnInitPoint 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   3000
+      TabIndex        =   6
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnRedoPoints 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   2040
+      TabIndex        =   7
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnResetLand 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   1080
+      TabIndex        =   8
+      Top             =   120
+      Width           =   975
+   End
+   Begin VB.CommandButton BtnNewLand 
+      Caption         =   "Command2"
+      Height          =   375
+      Left            =   120
+      TabIndex        =   0
+      Top             =   120
+      Width           =   975
+   End
    Begin VB.PictureBox PbLandScape 
       Height          =   1215
       Left            =   120
@@ -32,118 +144,6 @@ Begin VB.Form FrmPathFinder
       Height          =   375
       Left            =   7080
       TabIndex        =   14
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnLoadLand 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   120
-      TabIndex        =   13
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnSaveLand 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   1080
-      TabIndex        =   12
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnPFGo 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   2040
-      TabIndex        =   11
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnWhichGoal 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   3000
-      TabIndex        =   10
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnGoalPoint 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   3960
-      TabIndex        =   9
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnResetLand 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   1080
-      TabIndex        =   8
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnRedoPoints 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   2040
-      TabIndex        =   7
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnInitPoint 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   3000
-      TabIndex        =   6
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnCancel 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   3960
-      TabIndex        =   5
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnValleyPoint 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   4920
-      TabIndex        =   4
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnSetAnim 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   4920
-      TabIndex        =   3
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnMountainPoint 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   5880
-      TabIndex        =   2
-      Top             =   120
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnIterate 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   5880
-      TabIndex        =   1
-      Top             =   480
-      Width           =   975
-   End
-   Begin VB.CommandButton BtnNewLand 
-      Caption         =   "Command2"
-      Height          =   375
-      Left            =   120
-      TabIndex        =   0
       Top             =   120
       Width           =   975
    End
@@ -174,6 +174,7 @@ Private Sub ChkClockwise_Click()
 End Sub
 
 Private Sub Form_Load()
+  Me.Caption = "PathFinder with Backtracking and Compass" & " v" & App.Major & "." & App.Minor & "." & App.Revision
   Randomize
   Set mLand = New_Landscape(100, 75)
   Set mPF = New_PathFinder(mLand)
@@ -197,6 +198,7 @@ Private Sub Form_Load()
   BtnIterate.Caption = "Clear Found"
   ChkUseCompass.Caption = "Compass"
 End Sub
+
 Private Sub Form_Unload(Cancel As Integer)
   mPF.BeQuiet = True
   mPF.Cancel = True
