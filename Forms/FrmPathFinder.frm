@@ -10,7 +10,7 @@ Begin VB.Form FrmPathFinder
    ScaleHeight     =   7695
    ScaleWidth      =   10395
    StartUpPosition =   3  'Windows-Standard
-   Begin VB.CommandButton BtnIterate 
+   Begin VB.CommandButton BtnClearFound 
       Caption         =   "Command2"
       Height          =   375
       Left            =   5880
@@ -169,10 +169,6 @@ Private WithEvents mLand As Landscape
 Attribute mLand.VB_VarHelpID = -1
 Private mPF As PathFinder
 
-Private Sub ChkClockwise_Click()
-  mPF.Clockwise = (ChkClockwise.Value = vbChecked)
-End Sub
-
 Private Sub Form_Load()
   Me.Caption = "PathFinder with Backtracking and Compass" & " v" & App.Major & "." & App.Minor & "." & App.Revision
   Randomize
@@ -195,7 +191,7 @@ Private Sub Form_Load()
   BtnWhichGoal.Caption = "WhichGoal"
   BtnCancel.Caption = "Cancel"
   BtnSetAnim.Caption = "Anim. Speed"
-  BtnIterate.Caption = "Clear Found"
+  BtnClearFound.Caption = "Clear Found"
   ChkUseCompass.Caption = "Compass"
 End Sub
 
@@ -238,7 +234,7 @@ Dim brdr As Single: brdr = 8 * 15
   l = l + W
   If W > 0 And H > 0 Then Call BtnSetAnim.Move(l, T, W, H)
   l = l + W
-  If W > 0 And H > 0 Then Call BtnIterate.Move(l, T, W, H)
+  If W > 0 And H > 0 Then Call BtnClearFound.Move(l, T, W, H)
 
   l = l + W + brdr
   If W > 0 And H > 0 Then Call ChkUseCompass.Move(l, T, W, H)
@@ -330,6 +326,14 @@ Dim sa As String
     mPF.AnimationDelay = CLng(sa)
   End If
 End Sub
+Private Sub BtnClearFound_Click()
+    mLand.ClearFindTrack
+End Sub
+
+Private Sub ChkClockwise_Click()
+  mPF.Clockwise = (ChkClockwise.Value = vbChecked)
+End Sub
+
 Private Sub ChkUseCompass_Click()
   If Not mPF Is Nothing Then mPF.UseCompass = (ChkUseCompass.Value = vbChecked)
 End Sub
